@@ -12,6 +12,7 @@ angular
   .module('reCodeMeApp', [
     'ngAnimate',
     'ngCookies',
+    'ngMaterial',
     'ngResource',
     'ngRoute',
     'ngSanitize',
