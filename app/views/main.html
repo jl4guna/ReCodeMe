@@ -1,19 +1,47 @@
 <md-content>
-    <div >
-      <md-whiteframe class="md-whiteframe-z2 whiteframe" layout layout-align="center center">
-        <span>Item 1</span>
+    <div>
+      <md-whiteframe class="md-whiteframe-z2 whiteframe" layout='column'>
+        <div class="item-main" layout='row' layout-align="space-between center">
+            <p>Rutas</p>
+            <div class="item-botones">
+                <md-button class="md-raised md-primary">Editar</md-button>
+                <md-button class="md-raised md-warn" ng-click="showConfirm($event)">Borrar</md-button>
+            </div>
+        </div>
+        <md-chips class="item-tags">
+          <md-chip>AngularJS</md-chip>
+          <md-chip>JavaScript</md-chip>
+          <md-chip>NodeJs</md-chip>
+        </md-chips>
       </md-whiteframe>
-      <md-whiteframe class="md-whiteframe-z2 whiteframe" layout layout-align="center center">
-        <span>Item 2</span>
+
+      <md-whiteframe class="md-whiteframe-z2 whiteframe" layout='column'>
+        <div class="item-main" layout='row' layout-align="space-between center">
+            <p>Middlewares</p>
+            <div class="item-botones">
+                <md-button class="md-raised md-primary">Editar</md-button>
+                <md-button class="md-raised md-warn" ng-click="showConfirm($event)">Borrar</md-button>
+            </div>
+        </div>
+        <md-chips class="item-tags">
+          <md-chip>Django</md-chip>
+          <md-chip>Python</md-chip>
+        </md-chips>
       </md-whiteframe>
-      <md-whiteframe class="md-whiteframe-z2 whiteframe" layout layout-align="center center">
-        <span>Item 3</span>
-      </md-whiteframe>
-      <md-whiteframe class="md-whiteframe-z2 whiteframe" layout layout-align="center center">
-        <span>Item 4</span>
-      </md-whiteframe>
-      <md-whiteframe class="md-whiteframe-z2 whiteframe" layout layout-align="center center">
-        <span>Item 5</span>
+
+      <md-whiteframe class="md-whiteframe-z2 whiteframe" layout='column'>
+        <div class="item-main" layout='row' layout-align="space-between center">
+            <p>Reflux</p>
+            <div class="item-botones">
+                <md-button class="md-raised md-primary">Editar</md-button>
+                <md-button class="md-raised md-warn" ng-click="showConfirm($event)">Borrar</md-button>
+            </div>
+        </div>
+        <md-chips class="item-tags">
+          <md-chip>ReactJS</md-chip>
+          <md-chip>JavaScript</md-chip>
+          <md-chip>Ajax</md-chip>
+        </md-chips>
       </md-whiteframe>
     </div>
  </md-content>

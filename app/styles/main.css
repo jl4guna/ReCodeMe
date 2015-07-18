@@ -5,6 +5,11 @@
   padding: 0.2em 0;
 }
 
+html, body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
 body {
   padding: 0;
 }
@@ -28,6 +33,11 @@ body {
   margin-bottom: 0;
   line-height: 40px;
   padding-bottom: 19px;
+}
+
+.item-main{
+    padding-bottom: 1em;
+    flex-direction: row;
 }
 
 /* Custom page footer */
@@ -67,6 +77,10 @@ body {
   width: 600px;
 }
 
+.md-button{
+    margin: 0px 0px;
+}
+
 .md-toolbar-tools{
     background-color: rgb(0, 0, 0);
 }
@@ -77,4 +91,16 @@ body {
   .whiteframe{
       max-width: 400px;
   }
+
+}
+
+@media screen and (max-width: 640px) {
+  .whiteframe{
+      max-width: 400px;
+  }
+
+  .item-main{
+      flex-direction: column;
+  }
+
 }
