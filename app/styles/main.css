@@ -14,6 +14,10 @@ body {
   padding: 0;
 }
 
+.ace_editor {
+     height: 250px;
+ }
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -50,6 +54,10 @@ body {
 .formulario{
     width: 700px;
     padding: 2em;
+}
+
+.formulario-botones{
+    float: right;
 }
 
 .formulario-titulo{
