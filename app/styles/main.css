@@ -47,6 +47,15 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.formulario{
+    width: 700px;
+    padding: 2em;
+}
+
+.formulario-titulo{
+    background-color: rgba(16, 108, 200, 1) !important;
+}
+
 .container-narrow > hr {
   margin: 30px 0;
 }
