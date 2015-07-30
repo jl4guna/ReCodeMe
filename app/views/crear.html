@@ -1,0 +1,43 @@
+<div class="formulario">
+  <md-toolbar class="md-primary">
+    <h1 class="md-toolbar-tools formulario-titulo">
+      Crear {{nota.title}}
+    </h1>
+  </md-toolbar>
+  <md-content>
+    <form name="notaForm">
+      <md-input-container>
+        <label>Titulo</label>
+        <input md-maxlength="40" required name="title" ng-model="nota.title">
+        <div ng-messages="notaForm.title.$error">
+          <div ng-message="required"></div>
+        </div>
+      </md-input-container>
+      <md-input-container>
+        <label>Descripcion</label>
+        <input name="description" ng-model="nota.description">
+      </md-input-container>
+
+      <md-chips
+          ng-model="tags"
+          placeholder="Añadir tag"
+          delete-button-label="EliminarTag"
+          secondary-placeholder="+Tag"></md-chips>
+    </md-content>
+</br>
+    <md-input-container>
+        <div ui-ace="{
+  useWrapMode : true,
+  mode: 'javascript',
+  firstLineNumber: 1,
+  onLoad: aceLoaded,
+  onChange: aceChanged
+}"></div>
+    </md-input-container>
+
+    <div class="formulario-botones">
+        <md-button class="md-raised md-primary">Guardar</md-button>
+        <md-button class="md-raised md-warn" >Cancelar</md-button>
+    </div>
+    </form>
+</div>
